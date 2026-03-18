@@ -25,8 +25,8 @@ public String createuser() {
 	RestTemplate resttemplate = new RestTemplate();
 	//resttemplate.exchange("http://localhost:876/get/create/user",  httpEntity, String.class);
 	//request type for http request and request body and response type if it is array orlist list<userdetails>
-	ResponseEntity<String>response= resttemplate.exchange("http://localhost:876/get/create/user", HttpMethod.POST, httpEntity, String.class);
-		ResponseEntity<String>	response1 = resttemplate.exchange("http://localhost:876/get/create/user", HttpMethod.POST,httpEntity2,String.class);
+	ResponseEntity<String>response= resttemplate.exchange("http://localhost:#####/get/create/user", HttpMethod.POST, httpEntity, String.class);
+		ResponseEntity<String>	response1 = resttemplate.exchange("http://localhost:#####/get/create/user", HttpMethod.POST,httpEntity2,String.class);
 			
 	System.out.println(response.getStatusCode());
 	System.out.println(response1.getStatusCode());
